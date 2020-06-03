@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Loanday Template">
+    <meta name="keywords" content="Loanday, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank Customer Segmentation</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Load css,images, js files from server -->
+    {% load static %}
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    {% load static %}
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__search">
+            <i class="fa fa-search search-switch"></i>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="{% static 'img/logo.jpg' %}" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./services.html">Features</a></li>
+                        <li><a href="./services-details.html">Services Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="offcanvas__language">
+            <img src="img/flag.png" alt="">
+            <span>English</span>
+            <i class="fa fa-angle-down"></i>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Bangla</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header" style="height:90px">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="{% static 'img/logo.jpg' %}" style="width:100px" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="{% url 'Dashboard' %}">Dashboard</a></li>
+                                <li><a href="{% url 'cxform' %}">Prediction Form</a></li>
+                                <li><a href="#">Services</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./services.html">Features</a></li>
+                                        <li><a href="./services-details.html">Services Details</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero set-bg" data-setbg="{% static 'img/hero-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="hero__text">
+                        <h2 style="font-size:35px">A Data-Based Approach to Customer Segmentation in Banking</h2>
+                        <a href="#start" class="primary-btn">Get Start</a>
+                        <a href="https://www.youtube.com/watch?v=zPJtDohab-g" target="_blank" class="primary-btn howit-btn">How It Work</a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Home About Begin -->
+    <section class="home-about spad" style="padding:50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="home__about__text">
+                        <div class="section-title" id="start">
+                            <h2 style="font-size:30px">What is Bank Customer Segmentation?</h2>
+                            <p style="font-size:15px">Customer segmentation helps banks get to know their customers on a more granular level. Segmentation reveals specific intelligence that could otherwise be obscured by the sheer volume of data. These insights, in turn, inform messaging strategies for marketing and customer service strategies.
+                              Segmentation can also help banks better understand the customer lifecycle and predict customer behavior.</p>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1" style="margin-left:95px">
+                    <div class="home__about__img" style="width:350px">
+                        <img src="{% static 'img/about/home-about.jpg' %}"  alt="">
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center">
+
+                <img src="{% static 'img/spyder.jpg' %}" style="width:1000px" alt=""><br><br>
+                <img src="{% static 'img/plot.jpg' %}" style="width:700px;border:solid 1px" alt="">
+
+            </div>
+            <br><br>
+            <div style="text-align:center">
+              <a href="https://www.csp.com/customer-segmentation-value/#.XtRNyzpKjIU" class="primary-btn"  target="_blank">Learn More about Bank Customer Segmentation</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Home About End -->
+
+
+
+
+
+
+
+    <!-- Call Section Begin -->
+    <section class="call spad set-bg" data-setbg="{% static 'img/call-bg.jpg' %}" style="padding:50px">
+        <div class="container" style="text-align:center">
+
+                  <h2 style="color:white">Dashboard</h2><br>
+                  <img src="{% static 'img/dashboard.jpg' %}" style="width:500px" alt=""><br><br>
+                  <p style="color:white">A data dashboard is an information management tool that visually tracks, analyzes, metrics <br> and key data points to monitor the health of a business, department or specific process.</p>
+                  <a href="{% url 'Dashboard' %}" class="primary-btn">Get Started</a>
+
+        </div>
+    </section>
+    <!-- Call Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Prediction Form</h2>
+                        <p>Certainly at that point I was not a potential client for the Strib, but promotional</p>
+                        <img src="{% static 'img/form.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-lg-12 text-center">
+                    <a href="{% url 'cxform' %}" class="primary-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer" style="padding:0px">
+        <div class="container">
+
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br> Linkedin: <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fghaith-ben-amor-6a8003108%3Ffbclid%3DIwAR3FVWNp5zOs65XY7U__mkcQOgkxDVJpbW2WRAVGwzhH2WXnFTQBCAXdOsI&h=AT1BkYVfOoYE2LqHHg_XbBAuI11EqW70ei0D6qehVjkYxWHhR2Hm0psUFyA9NSE74XNbp0TbALVJSllCiTEG3HcKcme48kwlIjWo3hWG4cN9g9ik7YP5GYaJlBU6FpZci6ky9g" target="_blank">HERE</a> </p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

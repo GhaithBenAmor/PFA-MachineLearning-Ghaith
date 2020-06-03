@@ -1,1 +1,1 @@
-web: gunicorn PFA-MachineLearning-Ghaith.wsgi --log-file -
+web: gunicorn DjangoAPI.wsgi --log-file -

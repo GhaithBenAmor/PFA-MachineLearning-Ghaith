@@ -42,8 +42,8 @@ class ApprovalsView(viewsets.ModelViewSet):
 
 def approvereject(unit):
 	try:
-		mdl=joblib.load("/Users/USER/Desktop/Customer_Segmentation_Model.pkl")
-		scalers=joblib.load("/Users/USER/Desktop/Cluster1.pkl")
+		mdl=joblib.load("Customer_Segmentation_Model.pkl")
+		scalers=joblib.load("Cluster1.pkl")
 		X=scalers.transform(unit)
 		y_pred=mdl.predict(X)
 		#y_pred=(y_pred>0.58)

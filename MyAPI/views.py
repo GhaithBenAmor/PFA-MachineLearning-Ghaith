@@ -79,4 +79,4 @@ def cxcontact(request):
 
 	form=ApprovalForm()
 
-	return render(request, 'myform/cxform.html', {'form':form})
+	return render(request, 'Myform/cxform.html', {'form':form})

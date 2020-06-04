@@ -3,7 +3,7 @@ import pandas as pd
 # Create your views here.
 
 def indexPage(request):
-    data = pd.read_csv("C:/Users/USER/Desktop/german_credit_data.csv")
+    data = pd.read_csv("german_credit_data.csv")
 
     TotalRows=data[data.columns[0]].count()
     TotalCredit = data[data.columns[7]].sum()
